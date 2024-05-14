@@ -1,4 +1,4 @@
-# ASSIGNMENT WORK
+#                                                                                        ASSIGNMENT WORK
 
 # Railway Online Reservation System
 
@@ -36,13 +36,13 @@ This website is mainly created to fulfill the following requirements, it compris
 - The project gives the railway system functionality and flexibility so that anybody can use it quickly and effectively.
 - Additionally, this project offers a comprehensive array of solutions for several typical and specialized railroad work-related problems.
 
-# **Purpose of IROR**
+# **Purpose of RORS**
 
 The Ministry of Railways of the Government of India owns Indian Railways, a legal organization. It controls India's 7,325 stations and 67,956 km (42,226 mi) of total route length, making it the fourth biggest national railway system in the world by size. It has millions of passengers in it and runs 13,169 passenger trains every day, so managing it manually would be a difficult task. By computerizing it, we will be able to overcome many of its limitations and make it more efficient. If the system is automated, handling the data and records for such a big system can be considerably simpler than it would be if it were done manually.
 
-# Features of IROR
+# Features of Railway Online Reservation System 
 
-- IROR offers up-to-the-minute details on ticket costs and availability.
+- RORS offers up-to-the-minute details on ticket costs and availability.
 - Every registered user gets access to their tickets and the option to print them whenever they want.
 - Each visitor can do a search for the availability of trains, ticket costs, arrival and departure times, distances between sources and destinations, train routes and other information.
 - IROR also offers services such as listings of available trains, verifying the status of PNRs, seat availability, and more.
