@@ -1,6 +1,6 @@
-# DBMS PROJECT
+# ASSIGNMENT WORK
 
-# IROR : Indian Railway Online Reservation System
+# Railway Online Reservation System
 
 
 # Problem Statement
