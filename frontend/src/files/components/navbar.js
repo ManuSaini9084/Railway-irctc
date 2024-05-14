@@ -25,7 +25,7 @@ function Navbar() {
                   className="a-link"
                   style={{ textDecoration: "none" }}
                 >
-                  IROR
+                  RAILWAY MANAGEMENT SYSTEM
                 </a>
               </h3>
             </div>
@@ -33,6 +33,11 @@ function Navbar() {
               <div>
                 <Button variant="contained" href="./login">
                   LOGIN
+                </Button>
+              </div>
+              <div>
+                <Button variant="contained" href="./adminlogin">
+                  ADMIN LOGIN
                 </Button>
               </div>
               <div>
@@ -54,7 +59,7 @@ function Navbar() {
                   className="a-link"
                   style={{ textDecoration: "none" }}
                 >
-                  IROR
+                  RAILWAY MANAGEMENT SYSTEM
                 </a>
               </h3>
             </div>
@@ -92,7 +97,7 @@ function Navbar() {
                   className="a-link"
                   style={{ textDecoration: "none" }}
                 >
-                  IROR
+                  RAILWAY MANAGEMENT SYSTEM
                 </a>
               </h3>
             </div>

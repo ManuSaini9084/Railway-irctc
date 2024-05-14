@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../files.css";
 import "./bookticket.css";
 import TextField from "@mui/material/TextField";
@@ -7,14 +7,18 @@ import Details from "../Details";
 
 function Bookticket() {
   const [flag, setFlag] = useState(false);
-
   const [trainDeatails, setTrainDetails] = useState({
     departure: "",
     arrival: "",
     date: "",
   });
-
   const [trainResult, setTrainResult] = useState([]);
+
+  useEffect(() => {
+    if (flag) {
+      console.log(trainResult);
+    }
+  }, [flag, trainResult]);
 
   const onSubmitForm = async (e) => {
     e.preventDefault();
@@ -24,18 +28,18 @@ function Bookticket() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(trainDeatails),
       });
-      let res = await response.json();
+      const res = await response.json();
       console.log(res);
-      setTrainResult((prevValue) => {
-        return res;
-      });
-      console.log(trainResult);
-      console.log("chaning states");
+      setTrainResult(res);
+      console.log("changing state");
       setFlag(true);
     } catch (err) {
       console.log(err);
     }
   };
+
+
+
 
   function showTrains(train) {
     return <Details key={train.trainid} props={train} />;

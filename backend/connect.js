@@ -7,14 +7,22 @@ var PGPASSWORD = process.env.PGPASSWORD;
 var PGPORT = process.env.PGPORT;
 var PGUSER = process.env.PGUSER;
 
-const Pool = require("pg").Pool;
+const { Pool } = require("pg");
 
 const pool = new Pool({
-    user: PGUSER,
-    password: PGPASSWORD,
-    host: PGHOST,
-    port: PGPORT,
-    database: PGDATABASE
-});
+    user: "postgres",
+    password: "Manu123",
+    host: "localhost",
+    port: 5432,
+    database: "postgres"
+})
+pool.connect((err)=>{
+    if(err){
+        console.log("Connection error",err.stack);
+    }
+    else{
+        console.log("Connected");
+    }
+})
 
 module.exports = pool;

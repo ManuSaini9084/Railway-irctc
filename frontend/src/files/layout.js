@@ -6,7 +6,7 @@ import Footer from './components/footer';
 import Homepage from './homepage';
 import Register from './register';
 import Login from './login';
-import Schedule from "./schedule";
+import Schedule from "./Schedule";
 import Details from './Details';
 import Mybookings from "./mybookings"
 import AdminLogin from './adminLogin'
@@ -26,6 +26,7 @@ function Layout() {
   return (
     <Router>
         <Navbar isUser={isUser} isAdmin={isAdmin}/>
+        
         <Routes>
             <Route path="/" element={<Homepage/>}/>
             <Route path="/login" element={<Login setUser={setUser} setAdmin={setAdmin}/>} />
